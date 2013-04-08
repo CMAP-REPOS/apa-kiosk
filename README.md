@@ -1,2 +1,2 @@
-CMAP Kiosk Project
+**CMAP Kiosk Project**
 -html/css/js
