@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <meta name="author" content="John Nguyen" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="img/logo-cmap.png" /> 
+  
+  <title>InfoPad</title>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="//use.typekit.net/fzv0shf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- Date: Feburary 7, 2013 -->
+</head>
+<body>
+
+  <div class="page">
+    
+    <header id="header">
+      <a href="home.html" title="Home" id="logo">
+        <img src="img/logo.png" alt="InfoPad Logo" />
+      </a>
+    </header> <!-- #header -->
+    
+    <section id="main">
+      
+      <section class="primary">
+        
+      </section> <!-- .primary -->
+
+      <section class="secondary">
+      </section> <!-- .secondary -->
+
+    </section> <!-- #main -->
+
+    <footer id="footer">
+      <nav id="main-nav" class="nav" role="navigation">
+        <ul>
+          <li class="home"><a href="home.html"><span class="icon"></span>GO TO 2040</a></li>
+          <li class="action"><a href="#action"><span class="icon"></span>Action</a></li>
+          <li class="text project-list"><a href="project-list.html"><span class="icon"></span>Implementing GO TO 2040</a></li>
+          <li class="text play-video active"><a href="#play-video"><span class="icon"></span>Play Video</a></li>
+          <li class="text pause-video inactive"><a href="#pause-video"><span class="icon"></span>Pause Video</a></li>
+        </ul>
+      </nav>
+
+    </footer> <!-- #footer -->
+
+    <div id="action">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('#action').dialog('close');}"></iframe>
+
+      <form action="https://docs.google.com/forms/d/1x_ZqiPgcnqVP5wxwEsSGH4Lm_sn1eFkUptFe97v3Ugs/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <div>
+          <h3>Join Our Weekly Newsletters</h3>
+          <input type="text" name="entry.118838492" value="" class="ss-q-short" id="entry_118838492" dir="auto" placeholder="John Smith" />
+          <input type="email" name="entry.1673107597" value="" class="ss-q-short" id="entry_1673107597" dir="auto" aria-required="true" placeholder="email@address.com" /> 
+          <input type="submit" name="submit" value="Join" id="ss-submit" class="btn" />
+        </div>
+      </form>
+    </div> <!-- #actions -->
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/scriptj.js"></script>
+</body>
+</html>
