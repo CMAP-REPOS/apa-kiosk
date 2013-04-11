@@ -132,8 +132,8 @@ var App = {
     e.preventDefault();
     var ind = $(this).parent().index();
 
-    $('.managing-congestion > .wrap').css({
-      backgroundImage: 'url(../img/bg-congestion'+(ind+1)+'.jpg)'
+    $('.managing-congestion').css({
+      backgroundImage: 'url(img/bg-congestion'+(ind+1)+'.jpg)'
     });
     $('.phases-description li').fadeOut();
     $('.phases-description li').eq(ind).fadeIn();
